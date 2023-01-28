@@ -11,7 +11,6 @@ const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0/add')
 
 const ipfsClient = require('ipfs-http-client');
 // require('dotenv').config({path:__dirname+'/.env'})
-
 const projectId = `${INFURA_PROJECT_ID}`;
 const projectSecret = `${INFURA_PROJECT_SECRET}`;
 const auth =
@@ -93,17 +92,17 @@ export default function CreateItem() {
     <div className="flex justify-center">
       <div className="w-1/2 flex flex-col pb-12">
         <input 
-          placeholder="Asset Name"
+          placeholder="Item Name"
           className="mt-8 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
         <textarea
-          placeholder="Asset Description"
+          placeholder="Item Details"
           className="mt-2 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
         <input
-          placeholder="Asset Price in Eth"
+          placeholder="Item Price in Eth"
           className="mt-2 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
         />
