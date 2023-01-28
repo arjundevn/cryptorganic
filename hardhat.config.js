@@ -1,6 +1,6 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-waffle");
 const fs = require('fs');
-const privateKey = fs.readFileSync(".secret").toString();
+const privateKey = fs.readFileSync(".secret").toString().trim();
 
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -12,8 +12,12 @@ module.exports = {
     mumbai: {
       url: "https://eth-goerli.g.alchemy.com/v2/O6CJw1sf1A_xylTveSu8TVfSMqs2KDS_",
       accounts: [privateKey]
+    },
+    goerli: {
+      url: "https://eth-goerli.g.alchemy.com/v2/O6CJw1sf1A_xylTveSu8TVfSMqs2KDS_",
+      accounts: [privateKey]
     }
   },
-  solidity: "0.8.17",
+  solidity: "0.8.4",
 };
   

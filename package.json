@@ -1,5 +1,5 @@
 {
-  "name": "cryptorganic",
+  "name": "polygon-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,24 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
-    "@nomiclabs/hardhat-ethers": "^2.2.2",
-    "@nomiclabs/hardhat-waffle": "^2.0.3",
-    "@openzeppelin/contracts": "^4.8.1",
-    "axios": "^1.2.5",
-    "chai": "^4.3.7",
-    "ethereum-waffle": "^4.0.9",
-    "ethers": "^5.7.2",
-    "hardhat": "^2.12.6",
-    "ipfs-http-client": "50.1.2",
-    "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "web3modal": "^1.9.12"
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@openzeppelin/contracts": "^4.5.0",
+    "axios": "^0.26.0",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.8.4",
+    "ipfs-http-client": "^56.0.1",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "web3modal": "^1.9.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4"
+    "autoprefixer": "^10.2.6",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }
