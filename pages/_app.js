@@ -6,7 +6,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <nav className="border-b p-6">
-        <p className="text-4xl font-bold">🍊Cryptorganic</p>
+        <p className="text-4xl font-bold">🍊Cryptorganic
+        <input
+          placeholder="Search"
+          className="mt-1 border rounded p-1 float-right text-2xl"
+        />
+        
+        </p>
         <div className="flex mt-4">
           <Link href="/">
             <a className="mr-4 text-pink-500">
