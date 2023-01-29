@@ -12,6 +12,8 @@ const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0/add')
 
 const ipfsClient = require('ipfs-http-client');
 // require('dotenv').config({path:__dirname+'/.env'})
+const INFURA_PROJECT_ID = '2KxjJcEJyL9xJn5C4Np43ZgMTfe';
+const INFURA_PROJECT_SECRET = '9e57d10c6c99d1a81a0a95d43e854516';
 const projectId = `${INFURA_PROJECT_ID}`;
 const projectSecret = `${INFURA_PROJECT_SECRET}`;
 const auth =
