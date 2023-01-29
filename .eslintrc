@@ -1,4 +1,6 @@
 {
   "extends": ["next", "next/core-web-vitals"],
-  "react/jsx-no-duplicate-props": [<enabled>, { "ignoreCase": <boolean> }]
+  "rules": {
+    "react/jsx-no-duplicate-props": [<enabled>, { "ignoreCase": <boolean> }]
+  }
 }
