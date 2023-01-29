@@ -53,7 +53,7 @@ export default function MyAssets() {
     console.log('nft:', nft)
     router.push(`/resell-nft?id=${nft.tokenId}&tokenURI=${nft.tokenURI}`)
   }
-  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl">No NFTs owned</h1>)
+  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl text-white">No NFTs owned</h1>)
   return (
     <div className="flex justify-center">
       <div className="p-4">
@@ -63,7 +63,7 @@ export default function MyAssets() {
               <div key={i} className="border shadow rounded-xl overflow-hidden">
                 <Image width={800} height={800} src={nft.image} className="rounded" />
                 <div className="p-4">
-                  <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>
+                  <p style={{ height: '64px' }} className="text-2xl font-semibold text-white">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
                     <p className="text-gray-400">{nft.description}</p>
                   </div>

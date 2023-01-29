@@ -47,7 +47,7 @@ export default function CreatorDashboard() {
     setNfts(items)
     setLoadingState('loaded') 
   }
-  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl">No NFTs listed</h1>)
+  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl text-white">No NFTs listed</h1>)
   return (
     <div>
       <div className="p-4">
@@ -57,7 +57,7 @@ export default function CreatorDashboard() {
               <div key={i} className="border shadow rounded-xl overflow-hidden">
                 <Image width={800} height={800} src={nft.image} className="rounded"/>
                 <div className="p-4">
-                  <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>
+                  <p style={{ height: '64px' }} className="text-2xl font-semibold text-white">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
                     <p className="text-gray-400">{nft.description}</p>
                   </div>

@@ -100,7 +100,7 @@ export default function CreateItem() {
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
         <textarea
-          placeholder="Item Deetails"
+          placeholder="Item Details"
           className="mt-2 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
@@ -112,7 +112,7 @@ export default function CreateItem() {
         <input
           type="file"
           name="Asset"
-          className="my-4"
+          className="my-4 text-white"
           onChange={onChange}
         />
         {
@@ -120,7 +120,7 @@ export default function CreateItem() {
             <Image width={800} height={800} className="rounded mt-4" width="350" src={fileUrl} />
           )
         }
-        <button onClick={listNFTForSale} className="font-bold mt-4 bg-pink-500 text-white rounded p-4 shadow-lg">
+        <button onClick={listNFTForSale} className="font-bold mt-4 bg-yellow-600 text-white rounded p-4 shadow-lg">
           List
         </button>
       </div>
