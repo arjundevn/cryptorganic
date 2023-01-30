@@ -10,4 +10,4 @@ The smart contracts are deployed on Goerli testnet. (Ethererum based) and hence 
 
  Here are the primary functionalities of the app:
 
- 
+Listing fees: 0.025eth
